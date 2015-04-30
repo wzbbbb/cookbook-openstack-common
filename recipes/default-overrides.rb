@@ -34,7 +34,7 @@ node.override["openstack"]["network"]["ml2"]["fw_driver"] = "neutron.agent.linux
 node.override["openstack"]["network"]["ml2"]["local_ip_interface"] = "eth2"
 #node.override['openstack']['network']['openvswitch']['local_ip_interface'] = "eth1" 
 # L3 external bridge binding
-node.override["openstack"]["network"]["l3"]["external_network_bridge_interface"] = "eth3"
+node.override["openstack"]["network"]["l3"]["external_network_bridge_interface"] = "bond0"
 # Openvswitch 
 node.override["openstack"]["network"]["openvswitch"]["local_ip_interface"] = "eth2"
 node.override["openstack"]["network"]["openvswitch"]["tunnel_id_ranges"] = "1:32000"
